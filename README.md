@@ -18,6 +18,8 @@ Bash
 
 
 sudo auto_deploy breakmyssh.tar
+
+
 2. Reconocimiento y Escaneo de Puertos
 Se realiza un escaneo de puertos TCP sobre la dirección IP del contenedor (172.17.0.2) para identificar servicios activos.
 
