@@ -27,7 +27,7 @@ Se realiza un escaneo de puertos TCP sobre la dirección IP del contenedor (172.
 ```
 nmap -p- --open -sS --min-rate 5000 -n -Pn 172.17.0.2 -oN puertos.txt
 ```
-
+![image alt](https://github.com/orellanacarlos3179-lang/Dockerlabs-BreakMySSH-Writeup/blob/708bec79b69df54386aa2a9005120e83242c1d10/02-puertos%20activos.JPEG)
 
 Resultado: El puerto 22/tcp (SSH) se encuentra abierto.
 
@@ -37,6 +37,9 @@ Se ejecuta un escaneo enfocado en el puerto 22 para determinar la versión exact
 ```
 nmap -sCV -p22 172.17.0.2 -oN servicios.txt
 ```
+![image alt](https://github.com/orellanacarlos3179-lang/Dockerlabs-BreakMySSH-Writeup/blob/708bec79b69df54386aa2a9005120e83242c1d10/03-servicios%20activos.JPEG)
+
+
 Resultado: El puerto corre OpenSSH 7.7.
 
 
