@@ -19,7 +19,7 @@ Se inicia el laboratorio en el entorno local utilizando el script de autodeploy 
 sudo auto_deploy breakmyssh.tar
 ```
 
-![image alt](https://github.com/orellanacarlos3179-lang/Dockerlabs-BreakMySSH-Writeup/blob/d83b185c062918cf43c26365e323a784a345c67a/01-autodeploy.JPEG)
+![image alt](https://github.com/orellanacarlos3179-lang/Dockerlabs-BreakMySSH-Writeup/blob/edd4138450cc460c635b3115655a876db3ce9e0a/01-autodeploy.JPEG)
 
 2. Reconocimiento y Escaneo de Puertos
 Se realiza un escaneo de puertos TCP sobre la dirección IP del contenedor (172.17.0.2) para identificar servicios activos.
