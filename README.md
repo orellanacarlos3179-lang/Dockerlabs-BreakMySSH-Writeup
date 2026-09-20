@@ -13,6 +13,7 @@
 
 ### 1. Despliegue de la Máquina
 Se inicia el laboratorio en el entorno local utilizando el script de autodeploy de Dockerlabs.
+![image alt](https://github.com/orellanacarlos3179-lang/Dockerlabs-BreakMySSH-Writeup/blob/d83b185c062918cf43c26365e323a784a345c67a/01-autodeploy.jpeg)
 
 ```
 sudo auto_deploy breakmyssh.tar
